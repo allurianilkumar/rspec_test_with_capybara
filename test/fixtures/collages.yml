@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cname: MyString
+  branch: MyString
+  exam: MyString
+
+two:
+  cname: MyString
+  branch: MyString
+  exam: MyString

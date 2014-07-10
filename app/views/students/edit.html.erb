@@ -1,0 +1,20 @@
+<head>
+    <title><% @student_title = 'Edit Subjetcs' %></title>
+</head>
+
+<%= link_to("<< Back to list",{ :action => 'index'}, :class => 'back-link') %>
+
+<div class="Student edit">
+
+  <h2>Update Page </h2>
+
+    <%= form_for( :student, :url => { :action => 'update' }) do |f| %>
+  
+        <table summary="Student from  fields">
+        <%= render( :partial => "form", :locals =>{ :f => f}) %>
+        </table>
+  <div class="form-buttons">
+      <%= submit_tag("Update Student") %>
+  </div>
+<% end %>
+</div>
